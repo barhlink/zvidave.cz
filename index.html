@@ -98,6 +98,10 @@
     justify-content: space-between;
     height: 68px;
   }
+  @media (min-width: 861px) {
+    nav { height: 102px; padding: 0 80px; }
+    .nl-main, .nl-dot, .nl-cz { font-size: 42px; }
+  }
 
   .nav-logo {
     display: flex;
@@ -565,16 +569,16 @@
   /* ─── FOOTER ─── */
   footer {
     background: var(--navy);
-    padding: 56px 80px;
+    padding: 84px 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 24px;
   }
   .footer-logo-text { display:flex; align-items:baseline; }
-  .fl-main { font-family:'Cormorant Garamond',serif; font-weight:500; font-style:italic; font-size:24px; color:white; line-height:1; }
-  .fl-dot  { font-family:'Cormorant Garamond',serif; font-weight:500; font-style:italic; font-size:24px; color:var(--gold); line-height:1; margin-left:1px; }
-  .fl-cz   { font-family:'Cormorant Garamond',serif; font-weight:300; font-style:italic; font-size:24px; color:white; line-height:1; opacity:0.32; margin-left:-1px; }
+  .fl-main { font-family:'Cormorant Garamond',serif; font-weight:500; font-style:italic; font-size:36px; color:white; line-height:1; }
+  .fl-dot  { font-family:'Cormorant Garamond',serif; font-weight:500; font-style:italic; font-size:36px; color:var(--gold); line-height:1; margin-left:1px; }
+  .fl-cz   { font-family:'Cormorant Garamond',serif; font-weight:300; font-style:italic; font-size:36px; color:white; line-height:1; opacity:0.32; margin-left:-1px; }
   .footer-copy { font-size:0.78rem; color:rgba(255,255,255,0.35); letter-spacing:0.06em; }
 
   /* ─── FOOTER BADGE ─── */
@@ -769,7 +773,7 @@
   <div class="games-grid">
 
     <!-- Hra 1 -->
-    <a class="game-card" href="../hry/zlomkova-zoo/">
+    <a class="game-card" href="hry/zlomkova-zoo/">
       <div class="game-thumb" style="background: linear-gradient(135deg,#e8f7fb,#c8ecf6);">🦁</div>
       <div class="game-body">
         <div class="game-tag" data-i18n="g1_tag">Matematika · Zlomky</div>
@@ -783,7 +787,7 @@
     </a>
 
     <!-- Hra 2 -->
-    <a class="game-card" href="../hry/tiskbot/">
+    <a class="game-card" href="hry/tiskbot/">
       <div class="game-thumb" style="background: linear-gradient(135deg,#edf5e8,#d0ebc4);">🤖</div>
       <div class="game-body">
         <div class="game-tag" data-i18n="g3_tag">Informatika · 3D tisk</div>
