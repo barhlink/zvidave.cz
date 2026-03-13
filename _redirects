@@ -1,0 +1,10 @@
+# Netlify _redirects
+# https://docs.netlify.com/routing/redirects/
+
+# Root → language detection (handled by JS in index.html)
+# Fallback redirect for browsers without JS
+/          /cs/        302  Language=cs
+/          /en/        302  Language=en
+/          /uk/        302  Language=uk
+/          /fr/        302  Language=fr
+/          /cs/        302

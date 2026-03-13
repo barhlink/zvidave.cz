@@ -1,0 +1,26 @@
+{
+  "lang": "fr",
+  "site_name": "Zvídavě.cz",
+  "tagline": "Jeux et matériaux pédagogiques",
+  "nav": {
+    "home": "Accueil",
+    "catalogue": "Catalogue",
+    "mathematics": "Mathématiques",
+    "computer_science": "Informatique",
+    "czech": "Langue tchèque"
+  },
+  "catalogue": {
+    "title": "Catalogue",
+    "description": "Aperçu de tous les matériaux pédagogiques et jeux."
+  },
+  "zlomkova_zoo": {
+    "title": "Zoo des fractions",
+    "tagline": "Pratiquer les fractions en jouant",
+    "description": "Les élèves aident les animaux du zoo à diviser correctement la nourriture avec des fractions.",
+    "grade_range": "Classes de CM1–6e",
+    "play_button": "Lancer le jeu",
+    "teacher_info": "Informations pour l'enseignant",
+    "loading": "Chargement du jeu…",
+    "coming_soon": "Bientôt disponible…"
+  }
+}

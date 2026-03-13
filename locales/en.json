@@ -1,0 +1,26 @@
+{
+  "lang": "en",
+  "site_name": "Zvídavě.cz",
+  "tagline": "Educational games and materials",
+  "nav": {
+    "home": "Home",
+    "catalogue": "Catalogue",
+    "mathematics": "Mathematics",
+    "computer_science": "Computer Science",
+    "czech": "Czech Language"
+  },
+  "catalogue": {
+    "title": "Catalogue",
+    "description": "Overview of all educational materials and games."
+  },
+  "zlomkova_zoo": {
+    "title": "Fraction Zoo",
+    "tagline": "Practising fractions through play",
+    "description": "Students help zoo animals by correctly dividing food using fractions.",
+    "grade_range": "Grades 4–6",
+    "play_button": "Launch game",
+    "teacher_info": "Teacher info",
+    "loading": "Loading game…",
+    "coming_soon": "Coming soon…"
+  }
+}

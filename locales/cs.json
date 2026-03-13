@@ -1,0 +1,26 @@
+{
+  "lang": "cs",
+  "site_name": "Zvídavě.cz",
+  "tagline": "Hry a výukové materiály",
+  "nav": {
+    "home": "Domů",
+    "catalogue": "Katalog",
+    "mathematics": "Matematika",
+    "computer_science": "Informatika",
+    "czech": "Čeština"
+  },
+  "catalogue": {
+    "title": "Katalog materiálů",
+    "description": "Přehled všech výukových materiálů a her."
+  },
+  "zlomkova_zoo": {
+    "title": "Zlomková ZOO",
+    "tagline": "Procvičování zlomků hravou formou",
+    "description": "Žáci pomáhají zvířatům v zoo správně rozdělit jídlo pomocí zlomků.",
+    "grade_range": "4.–6. ročník ZŠ",
+    "play_button": "Spustit hru",
+    "teacher_info": "Informace pro učitele",
+    "loading": "Hra se načítá…",
+    "coming_soon": "Připravujeme…"
+  }
+}
