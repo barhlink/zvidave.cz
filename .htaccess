@@ -1,0 +1,31 @@
+# Apache .htaccess – Zvídavě.cz
+# Language-based redirect from root
+
+Options -Indexes
+RewriteEngine On
+
+# Redirect root based on Accept-Language header
+RewriteCond %{REQUEST_URI} ^/?$
+RewriteCond %{HTTP:Accept-Language} ^cs [NC]
+RewriteRule ^ /cs/ [R=302,L]
+
+RewriteCond %{REQUEST_URI} ^/?$
+RewriteCond %{HTTP:Accept-Language} ^uk [NC]
+RewriteRule ^ /uk/ [R=302,L]
+
+RewriteCond %{REQUEST_URI} ^/?$
+RewriteCond %{HTTP:Accept-Language} ^fr [NC]
+RewriteRule ^ /fr/ [R=302,L]
+
+RewriteCond %{REQUEST_URI} ^/?$
+RewriteCond %{HTTP:Accept-Language} ^en [NC]
+RewriteRule ^ /en/ [R=302,L]
+
+# Default fallback → Czech
+RewriteCond %{REQUEST_URI} ^/?$
+RewriteRule ^ /cs/ [R=302,L]
+
+# Serve index.html for clean URLs (trailing slash)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}/index.html -f
+RewriteRule ^(.+[^/])$ /$1/ [R=301,L]
