@@ -22,5 +22,272 @@
     "teacher_info": "Informace pro učitele",
     "loading": "Hra se načítá…",
     "coming_soon": "Připravujeme…"
+  },
+  "tiskbot": {
+    "page_title": "Tiskbot – Hra o 3D tiskárně!",
+    "header": {
+      "subtitle": "Nauč se nastavit 3D tiskárnu!"
+    },
+    "ui": {
+      "print_btn": "🖨️ TISKNOUT!",
+      "printing_btn": "⏳ Tisknu...",
+      "retry_btn": "↺ Zkusit znovu",
+      "next_btn": "Další úkol! →",
+      "hint_show": "💡 Potřebuji nápovědu",
+      "hint_hide": "✕ Schovat nápovědu",
+      "challenge_label": "📋 Co chce zákazník?",
+      "printer_card_label": "🖨️ Tiskárna Tiskbota",
+      "printer_label": "TISKBOT 3000",
+      "mascot_label": "Tiskbot říká:",
+      "mat_label": "🧱 Z čeho to vytiskneme?",
+      "infill_label": "💪 Jak pevná výplň?",
+      "speed_label": "⚡ Jak rychle tiskneme?",
+      "progress_label": "Průběh tisku",
+      "chip_mat": "Materiál",
+      "chip_infill": "Výplň",
+      "chip_speed": "Rychlost",
+      "stat_mat": "Materiál",
+      "stat_infill": "Výplň",
+      "stat_speed": "Rychlost",
+      "animal_label": "Nová energie!",
+      "fact_title": "Věděl/a jsi?",
+      "fact_btn": "Jdeme dál! →",
+      "world_sub": "Energie z tohoto světa jsou ve tvé zásobě!",
+      "next_world_label": "Další svět",
+      "next_world_btn": "Hraju dál! →",
+      "win_title": "Energie nabita!",
+      "win_msg": "Nasbíral/a jsi {count} energií! Teď víš, jak nastavit 3D tiskárnu pro každý případ. 🎉",
+      "win_sources": "📚 Fakta z: Sinterit.com · All3DP.com · Ultimaker.com · Polymaker Wiki",
+      "restart_btn": "Hrát znovu! 🔄",
+      "world_done": "{name} – hotovo!",
+      "mat_options": { "PLA": "Tvrdý plast", "PETG": "Silný plast", "TPU": "Gumový" },
+      "mat_sub":     { "PLA": "PLA", "PETG": "PETG", "TPU": "TPU" },
+      "infill_options": { "low": "Dutá", "mid": "Střední", "high": "Plná" },
+      "infill_sub":     { "low": "0–1 %", "mid": "15–20 %", "high": "100 %" },
+      "speed_options": { "slow": "Pomalu", "fast": "Rychle" },
+      "speed_sub":     { "slow": "hezčí", "fast": "hrubší" },
+      "stat_values": {
+        "mat":    { "PLA": "🔵 Tvrdý plast", "PETG": "🟢 Silný plast", "TPU": "🟠 Gumový" },
+        "infill": { "low": "🫧 Dutá – 0–1 %", "mid": "🍩 Střední – 15–20 %", "high": "🪨 Plná – 100 %" },
+        "speed":  { "slow": "🐢 Pomalu", "fast": "🐇 Rychle" }
+      }
+    },
+    "mascot": {
+      "idle":     "Vyber nastavení a tiskneme!",
+      "thinking": "Hmm, jaký materiál zvolíš?",
+      "ready":    "Super! Stiskni TISKNOUT!",
+      "printing": "Tisknu, tisknu, tisknu...",
+      "great":    "Zákazník je nadšený! Výborná práce!",
+      "ok":       "Zákazník je spokojený. Co by šlo příště zkusit?",
+      "curious":  "Zajímavý výsledek! Přemýšlíš, co by šlo změnit?"
+    },
+    "results": {
+      "great":   "Zákazník je nadšený! 🎉",
+      "ok":      "Zákazník je celkem spokojený.",
+      "curious": "Zajímavý výsledek – co bys příště zkusil/a jinak?",
+      "bad":     "Hmm, výsledek nesedí přání zákazníka. Co by šlo změnit?"
+    },
+    "mat_facts": {
+      "PLA":  { "title": "PLA – Tvrdý plast",     "text": "🌽 PLA se vyrábí z kukuřičného škrobu a třtinového cukru – jeden z nejekologičtějších plastů!" },
+      "PETG": { "title": "PETG – Silný plast",     "text": "💪 PETG odolá teplotám až 80 °C a je pevnější než PLA. Vhodný pro díly pod zátěží." },
+      "TPU":  { "title": "TPU – Gumový materiál",  "text": "🤸 TPU se natáhne až na 5× svou délku! Jako plastová guma – ohebný a odolný." }
+    },
+    "facts": [
+      { "emoji": "🧅", "text": "Tiskárna tiskne po vrstvách – jako cibule!", "detail": "Každá vrstva je 0,1–0,3 mm. Tenčí vrstva = hladší povrch, ale delší tisk. Polovina tloušťky = dvojnásobný čas!" },
+      { "emoji": "🌽", "text": "PLA se vyrábí z kukuřice!", "detail": "PLA vzniká z obnovitelných zdrojů – kukuřičný škrob nebo třtinový cukr. Šetrný k přírodě." },
+      { "emoji": "🪨", "text": "Výplň rozhoduje o pevnosti i váze!", "detail": "0–1 % = lehký a dutý. 100 % = plný a pevný. Klíče a nástroje potřebují hodně výplně!" },
+      { "emoji": "🐇", "text": "Rychlý tisk = hrubší povrch!", "detail": "Pomalu = hezčí výsledek. Rychle = šetříme čas. Pro dekorace tiskneme pomalu, pro prototypy rychle." },
+      { "emoji": "🦆", "text": "TPU se natáhne jako guma!", "detail": "TPU (termoplastický polyuretan) se může natáhnout až 5× délky. Proto hračky, pouzdra na telefony, chrániče." },
+      { "emoji": "🌡️", "text": "PETG odolá teplotě až 80 °C!", "detail": "PLA změkne kolem 60 °C – nevhodný pro věci v autě nebo u sporáku. PETG zvládne i horkou troubu!" },
+      { "emoji": "♻️", "text": "3D tiskárna šetří materiál!", "detail": "Na rozdíl od obrábění, kde se materiál odstraňuje, 3D tiskárna přidává jen to, co potřebuje." },
+      { "emoji": "🎨", "text": "PLA dává nejhladší povrchy!", "detail": "Pro dekorativní předměty je PLA nejlepší – snadno se brousí a barví. PETG a ABS jsou drsnější." }
+    ],
+    "animal_names": [
+      ["Blesk", "Plamen", "Kapka", "Vír", "Jiskra"],
+      ["Plamen", "Kapka", "Vír", "Jiskra", "Blesk"],
+      ["Kapka", "Vír", "Jiskra", "Blesk", "Plamen"]
+    ],
+    "worlds": [
+      {
+        "id": 0, "icon": "🎮", "name": "Hračky a hry", "color": "#4ade80",
+        "challenges": [
+          {
+            "icon": "🦆", "name": "Gumová kachnička",
+            "desc": "Hračka pro malé dítě. Musí být měkká a ohebná!",
+            "hint": "💡 TPU se natáhne až 5× délky. Je jako opravdová guma!",
+            "reqs": [{"icon":"🤲","text":"Měkká a ohebná"},{"icon":"👶","text":"Bezpečná pro dítě"}],
+            "feedback": {
+              "mats": { "good": "✅ TPU – natáhne se až 5× a vrátí se zpět. Ideální pro hračku!", "bad": "❌ Tvrdý plast by byl jako kámen. Dítě by bylo zklamané!" },
+              "inf":  { "good": "✅ Střední výplň = správná hmotnost kachničky.", "ok": "💛 Výplň ujde, ale střední by byla lepší." },
+              "spd":  { "good": "✅ Rychlost v pořádku!" }
+            }
+          },
+          {
+            "icon": "🏆", "name": "Pohár pro vítěze",
+            "desc": "Hezký pohár na polici. Krásný povrch je důležitý!",
+            "hint": "💡 PLA dává nejhladší povrchy. Dutá výplň ušetří materiál.",
+            "reqs": [{"icon":"✨","text":"Hladký povrch"},{"icon":"🎨","text":"Hezky vypadá"}],
+            "feedback": {
+              "mats": { "good": "✅ PLA = krásný hladký povrch. Vyroben z kukuřice! 🌽", "ok": "💛 PETG funguje, ale PLA by byl hladší.", "bad": "❌ Gumový pohár by byl ohnutý a divný!" },
+              "inf":  { "good": "✅ Dutý = lehký, ušetříme materiál. Pohár nic nedrží!", "ok": "💛 Výplň ujde, dutá by byla lepší." },
+              "spd":  { "good": "✅ Pomalu = hezčí výsledek!", "ok": "💛 Rychle ujde, ale pomalu = hladší povrch." }
+            }
+          },
+          {
+            "icon": "🎯", "name": "Terč na šipky",
+            "desc": "Pevný terč na zeď. Musí vydržet šipky i nárazy!",
+            "hint": "💡 Pevnost = vysoká výplň + silný materiál.",
+            "reqs": [{"icon":"💪","text":"Pevný, vydrží nárazy"},{"icon":"📌","text":"Drží tvar na zdi"}],
+            "feedback": {
+              "mats": { "good": "✅ PETG je pevnější než PLA. Terč vydrží mnoho zásahů!", "ok": "💛 PLA ujde pro lehčí použití.", "bad": "❌ Gumový terč by se vlnil při každé šipce!" },
+              "inf":  { "good": "✅ 100 % výplň = maximální pevnost. Terč to potřebuje!", "ok": "💛 Střední výplň ujde, ale plná by byla jistější.", "bad": "❌ Dutý terč se rozbije po prvním zásahu!" },
+              "spd":  { "good": "✅ Rychlost OK!" }
+            }
+          },
+          {
+            "icon": "🎪", "name": "Loutka na prst",
+            "desc": "Maňásek na divadlo. Musí být pohodlný na prstu a trochu pružný!",
+            "hint": "💡 Na prstech chceme pružný materiál, ne tvrdý plast.",
+            "reqs": [{"icon":"👆","text":"Pohodlný na prstu"},{"icon":"🤸","text":"Trochu pružný"}],
+            "feedback": {
+              "mats": { "good": "✅ TPU je pružný – na prstu bude pohodlný a nevylomí se!", "ok": "💛 PLA ujde, ale na prstu může být tvrdý.", "bad": "❌ PETG je příliš tuhý – maňásek by šel špatně na prst." },
+              "inf":  { "good": "✅ Dutá = lehká, volná loutka. Prst se dobře pohybuje.", "ok": "💛 Střední ujde.", "bad": "❌ Plná loutka by byla těžká a tuhá." },
+              "spd":  { "good": "✅ Pomalý tisk = hezčí detaily loutky.", "ok": "💛 Rychle ujde." }
+            }
+          },
+          {
+            "icon": "🎲", "name": "Herní kostka",
+            "desc": "Kostka na deskovou hru. Musí být přesná a pevná!",
+            "hint": "💡 Přesnost = hezký tisk. Pevnost = velká výplň.",
+            "reqs": [{"icon":"🎯","text":"Přesné číslice"},{"icon":"💪","text":"Pevná, nerozpadne se"}],
+            "feedback": {
+              "mats": { "good": "✅ PETG – pevný a číslice budou přesné!", "ok": "💛 PLA funguje, ale PETG by byl pevnější.", "bad": "❌ Gumová kostka? Při hodu by se deformovala!" },
+              "inf":  { "good": "✅ Plná kostka = pevná, nerozdrtí se ani pod tlakem!", "ok": "💛 Střední ujde.", "bad": "❌ Dutá kostka by praskla při prvním hodu!" },
+              "spd":  { "good": "✅ Pomalu = hezčí číslice na kostce.", "ok": "💛 Rychle ujde, ale číslice mohou být hrubší." }
+            }
+          }
+        ]
+      },
+      {
+        "id": 1, "icon": "🏠", "name": "Domácnost", "color": "#34d399",
+        "challenges": [
+          {
+            "icon": "🪴", "name": "Květináč na parapet",
+            "desc": "Hezký květináč na okno. Lehký a dekorativní!",
+            "hint": "💡 Dekorace = PLA + pomalý tisk + dutá výplň.",
+            "reqs": [{"icon":"🌿","text":"Hezký vzhled"},{"icon":"⚖️","text":"Lehký, nepoškodí okno"}],
+            "feedback": {
+              "mats": { "good": "✅ PLA = krásný hladký povrch pro dekorativní květináč!", "ok": "💛 PETG funguje, ale PLA by byl hezčí.", "bad": "❌ Gumový květináč by se bortil pod tíhou hlíny!" },
+              "inf":  { "good": "✅ Dutý = lehký. Parapet to zvládne!", "ok": "💛 Střední ujde.", "bad": "❌ Plný květináč by byl těžký jako kámen!" },
+              "spd":  { "good": "✅ Pomalu = krásné detaily!", "ok": "💛 Rychle ujde, ale povrch bude hrubší." }
+            }
+          },
+          {
+            "icon": "📱", "name": "Stojánek na telefon",
+            "desc": "Stojánek na stůl. Musí pevně držet telefon a být stabilní!",
+            "hint": "💡 Stabilita = dostatečná výplň. PETG lépe odolá tlaku.",
+            "reqs": [{"icon":"📐","text":"Stabilní, nepřepadne"},{"icon":"💪","text":"Drží telefon pevně"}],
+            "feedback": {
+              "mats": { "good": "✅ PETG je pevnější – stojánek vydrží i těžký tablet!", "ok": "💛 PLA funguje pro lehčí telefony.", "bad": "❌ Gumový stojánek = telefon se překlápí!" },
+              "inf":  { "good": "✅ Střední výplň = dobrá stabilita bez plýtvání materiálem.", "ok": "💛 Plná výplň je zbytečná, ale funguje.", "bad": "❌ Dutý stojánek se pod tíhou telefonu zhroutí!" },
+              "spd":  { "good": "✅ Rychlost OK!" }
+            }
+          },
+          {
+            "icon": "🔑", "name": "Věšák na klíče",
+            "desc": "Věšák na zeď. Musí unést klíče a být pevně přišroubovaný!",
+            "hint": "💡 Pevnost je klíčová – klíče jsou těžké!",
+            "reqs": [{"icon":"🔩","text":"Pevný, drží na zdi"},{"icon":"🗝️","text":"Unese více klíčů"}],
+            "feedback": {
+              "mats": { "good": "✅ PETG = pevný a odolný. Klíče nespadnou!", "ok": "💛 PLA ujde pro lehké klíče.", "bad": "❌ Gumový věšák? Klíče by ho roztáhly dolů!" },
+              "inf":  { "good": "✅ 100 % výplň = věšák nevypadne ze zdi!", "ok": "💛 Střední ujde pro méně klíčů.", "bad": "❌ Dutý věšák s klíči praskne!" },
+              "spd":  { "good": "✅ Rychlost OK!" }
+            }
+          },
+          {
+            "icon": "🧴", "name": "Dávkovač na mýdlo",
+            "desc": "Náhradní pumpa na tekuté mýdlo. Musí být voděodolná a pevná!",
+            "hint": "💡 PETG lépe odolá vodě a chemikáliím než PLA.",
+            "reqs": [{"icon":"💧","text":"Odolná vodě"},{"icon":"💪","text":"Pevná pumpa"}],
+            "feedback": {
+              "mats": { "good": "✅ PETG odolá vodě a mýdlu. Správná volba pro koupelnu!", "ok": "💛 PLA časem vlhkost absorbuje – není ideální.", "bad": "❌ Gumová pumpa by nefungovala správně!" },
+              "inf":  { "good": "✅ Plná výplň = bez pórek, kam by pronikla voda.", "ok": "💛 Střední ujde.", "bad": "❌ Dutá pumpa – mýdlo by se dostalo dovnitř!" },
+              "spd":  { "good": "✅ Rychlost OK!" }
+            }
+          },
+          {
+            "icon": "🕯️", "name": "Svícen na čajovou svíčku",
+            "desc": "Hezký svícen na stůl. Důležitý je krásný vzhled!",
+            "hint": "💡 PLA + pomalý tisk = nejhezčí dekorativní výsledek.",
+            "reqs": [{"icon":"✨","text":"Krásný vzhled"},{"icon":"🕯️","text":"Drží svíčku bezpečně"}],
+            "feedback": {
+              "mats": { "good": "✅ PLA = hladký krásný povrch pro svícen!", "ok": "💛 PETG funguje, ale povrch nebude tak hladký.", "bad": "❌ Gumový svícen by se prohnul!" },
+              "inf":  { "good": "✅ Dutý = lehký a materiál šetříme.", "ok": "💛 Střední ujde.", "bad": "❌ Plný svícen je zbytečně těžký." },
+              "spd":  { "good": "✅ Pomalý tisk = nádherné detaily svícnu!", "ok": "💛 Rychle ujde, ale detaily budou hrubší." }
+            }
+          }
+        ]
+      },
+      {
+        "id": 2, "icon": "🏫", "name": "Škola a věda", "color": "#6ee7b7",
+        "challenges": [
+          {
+            "icon": "✏️", "name": "Stojánek na tužky",
+            "desc": "Stojánek na psací potřeby do školy. Musí být stabilní a hezký!",
+            "hint": "💡 Stabilita = střední výplň. PLA pro hezký vzhled.",
+            "reqs": [{"icon":"📐","text":"Stabilní na stole"},{"icon":"🎨","text":"Hezký vzhled"}],
+            "feedback": {
+              "mats": { "good": "✅ PLA = krásný a hladký. Na stůl do školy perfektní!", "ok": "💛 PETG funguje.", "bad": "❌ Gumový stojánek se ohne a tužky padají!" },
+              "inf":  { "good": "✅ Střední výplň = dobrá stabilita, nepřepadne.", "ok": "💛 Plná ujde, ale je zbytečná.", "bad": "❌ Dutý stojánek plný tužek se překotí!" },
+              "spd":  { "good": "✅ Pomalu = hezčí výsledek pro třídu!", "ok": "💛 Rychle ujde." }
+            }
+          },
+          {
+            "icon": "🔬", "name": "Držák na zkumavky",
+            "desc": "Stojánek do školní laboratoře. Musí pevně držet zkumavky!",
+            "hint": "💡 Laboratoř = pevnost a odolnost. PETG odolá chemikáliím!",
+            "reqs": [{"icon":"🧪","text":"Pevně drží zkumavky"},{"icon":"💧","text":"Odolný chemikáliím"}],
+            "feedback": {
+              "mats": { "good": "✅ PETG odolá kyselinám i zásadám v laboratoři!", "ok": "💛 PLA se může poškodit při kontaktu s chemikáliemi.", "bad": "❌ Gumový držák se ohýbá – zkumavky se vyklopí!" },
+              "inf":  { "good": "✅ Plná výplň = maximální pevnost pro bezpečnou laboratoř!", "ok": "💛 Střední ujde.", "bad": "❌ Dutý držák se zhroutí se zkumavkami!" },
+              "spd":  { "good": "✅ Rychlost OK!" }
+            }
+          },
+          {
+            "icon": "🗺️", "name": "Mapkové puzzle",
+            "desc": "Část vzdělávacího puzzle světadílů. Lehký a hezký!",
+            "hint": "💡 Puzzle = PLA + dutá výplň + pomalu pro detaily.",
+            "reqs": [{"icon":"🌍","text":"Hezký tvar kontinentu"},{"icon":"⚖️","text":"Lehký kousek puzzle"}],
+            "feedback": {
+              "mats": { "good": "✅ PLA = hladký povrch, hezké barvy, ekologický!", "ok": "💛 PETG funguje.", "bad": "❌ Gumové puzzle se kroutí a nebude pasovat!" },
+              "inf":  { "good": "✅ Dutý = lehký kousek. Puzzle se snadno skládá!", "ok": "💛 Střední ujde.", "bad": "❌ Plné puzzle je těžké a děti se unaví dřív!" },
+              "spd":  { "good": "✅ Pomalu = přesné tvary světadílů!", "ok": "💛 Rychle ujde, ale okraje budou hrubší." }
+            }
+          },
+          {
+            "icon": "📏", "name": "Pravítko s milimetry",
+            "desc": "Přesné pravítko na rýsování. Musí mít přesné mm!",
+            "hint": "💡 Přesnost = pomalý tisk + tvrdý materiál.",
+            "reqs": [{"icon":"📐","text":"Přesné milimetry"},{"icon":"💪","text":"Pevné, nelomí se"}],
+            "feedback": {
+              "mats": { "good": "✅ PETG = pevné a přesné pravítko, nevyhne se!", "ok": "💛 PLA funguje, ale může se časem ohnout.", "bad": "❌ Gumové pravítko? Každý rozměr bude jiný!" },
+              "inf":  { "good": "✅ Plné pravítko = tuhé, neohýbá se při rýsování!", "ok": "💛 Střední ujde.", "bad": "❌ Duté pravítko prohne a rozměry nebudou sedět!" },
+              "spd":  { "good": "✅ Pomalu = přesné milimetrové dílky!", "ok": "💛 Rychle ujde, ale dílky mohou být méně přesné." }
+            }
+          },
+          {
+            "icon": "🚀", "name": "Raketka na zeď",
+            "desc": "Dekorace do třídy. Musí být krásná a lehká!",
+            "hint": "💡 Pro krásné dekorace: PLA + pomalý tisk + malá výplň!",
+            "reqs": [{"icon":"🎨","text":"Krásný povrch"},{"icon":"⚖️","text":"Lehká a úsporná"}],
+            "feedback": {
+              "mats": { "good": "✅ PLA = nejhladší povrchy pro dekoraci ve třídě!", "ok": "💛 PETG funguje.", "bad": "❌ Gumová raketka by visela křivě!" },
+              "inf":  { "good": "✅ Dutá = lehká a úsporná. Dekorace nic nenese!", "ok": "💛 Střední ujde.", "bad": "❌ Plná dekorace = zbytečně těžká a drahá!" },
+              "spd":  { "good": "✅ Pomalu = nejkrásnější výsledek. Třída bude nadšená!", "ok": "💛 Rychle ujde, ale povrch bude hrubší." }
+            }
+          }
+        ]
+      }
+    ]
   }
 }

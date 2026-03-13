@@ -22,5 +22,272 @@
     "teacher_info": "Informations pour l'enseignant",
     "loading": "Chargement du jeu…",
     "coming_soon": "Bientôt disponible…"
+  },
+  "tiskbot": {
+    "page_title": "Impribot – Le jeu de l'imprimante 3D !",
+    "header": {
+      "subtitle": "Apprends à configurer une imprimante 3D !"
+    },
+    "ui": {
+      "print_btn": "🖨️ IMPRIMER !",
+      "printing_btn": "⏳ J'imprime...",
+      "retry_btn": "↺ Réessayer",
+      "next_btn": "Défi suivant ! →",
+      "hint_show": "💡 J'ai besoin d'un indice",
+      "hint_hide": "✕ Cacher l'indice",
+      "challenge_label": "📋 Que veut le client ?",
+      "printer_card_label": "🖨️ L'imprimante d'Impribot",
+      "printer_label": "IMPRIBOT 3000",
+      "mascot_label": "Impribot dit :",
+      "mat_label": "🧱 Avec quoi on imprime ?",
+      "infill_label": "💪 Quel remplissage intérieur ?",
+      "speed_label": "⚡ À quelle vitesse on imprime ?",
+      "progress_label": "Progression de l'impression",
+      "chip_mat": "Matériau",
+      "chip_infill": "Remplissage",
+      "chip_speed": "Vitesse",
+      "stat_mat": "Matériau",
+      "stat_infill": "Remplissage",
+      "stat_speed": "Vitesse",
+      "animal_label": "Nouvelle énergie !",
+      "fact_title": "Le savais-tu ?",
+      "fact_btn": "On continue ! →",
+      "world_sub": "L'énergie de ce monde est dans ta collection !",
+      "next_world_label": "Monde suivant",
+      "next_world_btn": "Je continue ! →",
+      "win_title": "Énergie chargée !",
+      "win_msg": "Tu as collecté {count} unités d'énergie ! Tu sais maintenant configurer une imprimante 3D pour chaque situation. 🎉",
+      "win_sources": "📚 Faits tirés de : Sinterit.com · All3DP.com · Ultimaker.com · Polymaker Wiki",
+      "restart_btn": "Rejouer ! 🔄",
+      "world_done": "{name} – terminé !",
+      "mat_options": { "PLA": "Plastique dur", "PETG": "Plastique solide", "TPU": "Caoutchouté" },
+      "mat_sub":     { "PLA": "PLA", "PETG": "PETG", "TPU": "TPU" },
+      "infill_options": { "low": "Creux", "mid": "Moyen", "high": "Plein" },
+      "infill_sub":     { "low": "0–1 %", "mid": "15–20 %", "high": "100 %" },
+      "speed_options": { "slow": "Lentement", "fast": "Rapidement" },
+      "speed_sub":     { "slow": "plus lisse", "fast": "plus rugueux" },
+      "stat_values": {
+        "mat":    { "PLA": "🔵 Plastique dur", "PETG": "🟢 Plastique solide", "TPU": "🟠 Caoutchouté" },
+        "infill": { "low": "🫧 Creux – 0–1 %", "mid": "🍩 Moyen – 15–20 %", "high": "🪨 Plein – 100 %" },
+        "speed":  { "slow": "🐢 Lentement", "fast": "🐇 Rapidement" }
+      }
+    },
+    "mascot": {
+      "idle":     "Choisis tes réglages et on imprime !",
+      "thinking": "Hmm, quel matériau vas-tu choisir ?",
+      "ready":    "Super ! Appuie sur IMPRIMER !",
+      "printing": "J'imprime, j'imprime, j'imprime...",
+      "great":    "Le client est ravi ! Excellent travail !",
+      "ok":       "Le client est satisfait. Que pourrais-tu essayer la prochaine fois ?",
+      "curious":  "Résultat intéressant ! Que changerais-tu la prochaine fois ?"
+    },
+    "results": {
+      "great":   "Le client est ravi ! 🎉",
+      "ok":      "Le client est assez satisfait.",
+      "curious": "Résultat intéressant – qu'essaierais-tu différemment ?",
+      "bad":     "Hmm, le résultat ne correspond pas à la demande du client. Que pourrais-tu changer ?"
+    },
+    "mat_facts": {
+      "PLA":  { "title": "PLA – Plastique dur",       "text": "🌽 Le PLA est fabriqué à partir d'amidon de maïs et de canne à sucre – l'un des plastiques les plus écologiques !" },
+      "PETG": { "title": "PETG – Plastique solide",   "text": "💪 Le PETG résiste aux températures jusqu'à 80 °C et est plus solide que le PLA. Idéal pour les pièces sous contrainte." },
+      "TPU":  { "title": "TPU – Matériau caoutchouté","text": "🤸 Le TPU peut s'étirer jusqu'à 5× sa longueur ! Comme du caoutchouc plastique – souple et résistant." }
+    },
+    "facts": [
+      { "emoji": "🧅", "text": "L'imprimante construit couche par couche – comme un oignon !", "detail": "Chaque couche fait 0,1–0,3 mm. Couche plus fine = surface plus lisse, mais impression plus longue. Épaisseur moitié = temps doublé !" },
+      { "emoji": "🌽", "text": "Le PLA est fabriqué à partir de maïs !", "detail": "Le PLA vient de sources renouvelables – amidon de maïs ou canne à sucre. Respectueux de la nature." },
+      { "emoji": "🪨", "text": "Le remplissage détermine à la fois la solidité et le poids !", "detail": "0–1 % = léger et creux. 100 % = plein et solide. Les clés et les outils ont besoin de beaucoup de remplissage !" },
+      { "emoji": "🐇", "text": "Impression rapide = surface plus rugueuse !", "detail": "Lentement = meilleur résultat. Rapidement = on gagne du temps. Pour les décorations on imprime lentement, pour les prototypes rapidement." },
+      { "emoji": "🦆", "text": "Le TPU s'étire comme du caoutchouc !", "detail": "Le TPU (polyuréthane thermoplastique) peut s'étirer jusqu'à 5× sa longueur. D'où son usage pour les jouets, coques de téléphone et protections." },
+      { "emoji": "🌡️", "text": "Le PETG résiste jusqu'à 80 °C !", "detail": "Le PLA ramollit vers 60 °C – pas adapté aux objets dans une voiture ou près d'une cuisinière. Le PETG peut même gérer un four chaud !" },
+      { "emoji": "♻️", "text": "L'impression 3D économise le matériau !", "detail": "Contrairement à l'usinage où le matériau est retiré, l'imprimante 3D n'ajoute que ce qui est nécessaire." },
+      { "emoji": "🎨", "text": "Le PLA donne les surfaces les plus lisses !", "detail": "Pour les objets décoratifs, le PLA est le meilleur – facile à poncer et à peindre. Le PETG et l'ABS sont plus rugueux." }
+    ],
+    "animal_names": [
+      ["Éclair", "Flamme", "Goutte", "Tourbillon", "Étincelle"],
+      ["Flamme", "Goutte", "Tourbillon", "Étincelle", "Éclair"],
+      ["Goutte", "Tourbillon", "Étincelle", "Éclair", "Flamme"]
+    ],
+    "worlds": [
+      {
+        "id": 0, "icon": "🎮", "name": "Jouets et jeux", "color": "#4ade80",
+        "challenges": [
+          {
+            "icon": "🦆", "name": "Canard en caoutchouc",
+            "desc": "Un jouet pour un petit enfant. Il doit être doux et flexible !",
+            "hint": "💡 Le TPU s'étire jusqu'à 5× sa longueur. C'est comme du vrai caoutchouc !",
+            "reqs": [{"icon":"🤲","text":"Doux et flexible"},{"icon":"👶","text":"Sans danger pour un enfant"}],
+            "feedback": {
+              "mats": { "good": "✅ TPU – s'étire jusqu'à 5× et reprend sa forme. Parfait pour un jouet !", "bad": "❌ Un plastique dur serait comme une pierre. L'enfant serait déçu !" },
+              "inf":  { "good": "✅ Remplissage moyen = le bon poids pour le canard.", "ok": "💛 Ce remplissage convient, mais le moyen serait mieux." },
+              "spd":  { "good": "✅ La vitesse est correcte !" }
+            }
+          },
+          {
+            "icon": "🏆", "name": "Trophée du vainqueur",
+            "desc": "Un beau trophée pour l'étagère. Une belle surface est importante !",
+            "hint": "💡 Le PLA donne les surfaces les plus lisses. Un remplissage creux économise le matériau.",
+            "reqs": [{"icon":"✨","text":"Surface lisse"},{"icon":"🎨","text":"Bel aspect"}],
+            "feedback": {
+              "mats": { "good": "✅ PLA = belle surface lisse. Fabriqué à partir de maïs ! 🌽", "ok": "💛 Le PETG fonctionne, mais le PLA serait plus lisse.", "bad": "❌ Un trophée en caoutchouc serait tordu et bizarre !" },
+              "inf":  { "good": "✅ Creux = léger, économise le matériau. Le trophée ne porte rien !", "ok": "💛 Ce remplissage convient, le creux serait mieux." },
+              "spd":  { "good": "✅ Lentement = meilleur résultat !", "ok": "💛 Rapidement convient, mais lentement = surface plus lisse." }
+            }
+          },
+          {
+            "icon": "🎯", "name": "Cible de fléchettes",
+            "desc": "Une cible solide pour le mur. Elle doit résister aux fléchettes et aux impacts !",
+            "hint": "💡 Solidité = remplissage élevé + matériau solide.",
+            "reqs": [{"icon":"💪","text":"Solide, résiste aux impacts"},{"icon":"📌","text":"Garde sa forme sur le mur"}],
+            "feedback": {
+              "mats": { "good": "✅ Le PETG est plus solide que le PLA. La cible encaissera de nombreux coups !", "ok": "💛 Le PLA convient pour une utilisation légère.", "bad": "❌ Une cible en caoutchouc ondulerait à chaque fléchette !" },
+              "inf":  { "good": "✅ 100 % de remplissage = solidité maximale. La cible en a besoin !", "ok": "💛 Remplissage moyen convient, mais plein serait plus sûr.", "bad": "❌ Une cible creuse se cassera dès le premier coup !" },
+              "spd":  { "good": "✅ Vitesse OK !" }
+            }
+          },
+          {
+            "icon": "🎪", "name": "Marionnette à doigt",
+            "desc": "Une marionnette pour le théâtre. Doit être confortable sur le doigt et légèrement flexible !",
+            "hint": "💡 Pour les doigts on veut un matériau flexible, pas un plastique dur.",
+            "reqs": [{"icon":"👆","text":"Confortable sur un doigt"},{"icon":"🤸","text":"Légèrement flexible"}],
+            "feedback": {
+              "mats": { "good": "✅ Le TPU est flexible – confortable sur le doigt et ne cassera pas !", "ok": "💛 Le PLA convient, mais peut être dur sur un doigt.", "bad": "❌ Le PETG est trop rigide – la marionnette serait difficile à enfiler." },
+              "inf":  { "good": "✅ Creux = marionnette légère. Le doigt bouge librement.", "ok": "💛 Moyen convient.", "bad": "❌ Une marionnette pleine serait lourde et rigide." },
+              "spd":  { "good": "✅ Impression lente = de beaux détails sur la marionnette.", "ok": "💛 Rapidement convient." }
+            }
+          },
+          {
+            "icon": "🎲", "name": "Dé de jeu",
+            "desc": "Un dé pour un jeu de société. Il doit être précis et solide !",
+            "hint": "💡 Précision = belle impression. Solidité = remplissage élevé.",
+            "reqs": [{"icon":"🎯","text":"Chiffres précis"},{"icon":"💪","text":"Solide, ne se cassera pas"}],
+            "feedback": {
+              "mats": { "good": "✅ PETG – solide et les chiffres seront précis !", "ok": "💛 Le PLA fonctionne, mais le PETG serait plus solide.", "bad": "❌ Un dé en caoutchouc ? Il se déformerait à chaque lancer !" },
+              "inf":  { "good": "✅ Dé plein = solide, ne sera pas écrasé même sous pression !", "ok": "💛 Moyen convient.", "bad": "❌ Un dé creux craquerait au premier lancer !" },
+              "spd":  { "good": "✅ Lentement = de plus beaux chiffres sur le dé.", "ok": "💛 Rapidement convient, mais les chiffres peuvent être plus rugueux." }
+            }
+          }
+        ]
+      },
+      {
+        "id": 1, "icon": "🏠", "name": "Maison", "color": "#34d399",
+        "challenges": [
+          {
+            "icon": "🪴", "name": "Pot pour le rebord de fenêtre",
+            "desc": "Un joli pot pour la fenêtre. Léger et décoratif !",
+            "hint": "💡 Décoration = PLA + impression lente + remplissage creux.",
+            "reqs": [{"icon":"🌿","text":"Bel aspect"},{"icon":"⚖️","text":"Léger, n'abîmera pas le rebord"}],
+            "feedback": {
+              "mats": { "good": "✅ PLA = belle surface lisse pour un pot décoratif !", "ok": "💛 Le PETG fonctionne, mais le PLA serait plus beau.", "bad": "❌ Un pot en caoutchouc s'affaisserait sous le poids de la terre !" },
+              "inf":  { "good": "✅ Creux = léger. Le rebord peut le supporter !", "ok": "💛 Moyen convient.", "bad": "❌ Un pot plein serait lourd comme une pierre !" },
+              "spd":  { "good": "✅ Lentement = de beaux détails !", "ok": "💛 Rapidement convient, mais la surface sera plus rugueuse." }
+            }
+          },
+          {
+            "icon": "📱", "name": "Support pour téléphone",
+            "desc": "Un support de bureau. Doit tenir le téléphone fermement et être stable !",
+            "hint": "💡 Stabilité = remplissage suffisant. Le PETG supporte mieux la pression.",
+            "reqs": [{"icon":"📐","text":"Stable, ne se renverse pas"},{"icon":"💪","text":"Tient le téléphone fermement"}],
+            "feedback": {
+              "mats": { "good": "✅ Le PETG est plus solide – le support tiendra même une tablette lourde !", "ok": "💛 Le PLA convient pour les téléphones légers.", "bad": "❌ Un support en caoutchouc = le téléphone se renverse sans cesse !" },
+              "inf":  { "good": "✅ Remplissage moyen = bonne stabilité sans gaspiller le matériau.", "ok": "💛 Plein est inutile, mais ça fonctionne.", "bad": "❌ Un support creux s'effondrera sous le poids du téléphone !" },
+              "spd":  { "good": "✅ Vitesse OK !" }
+            }
+          },
+          {
+            "icon": "🔑", "name": "Crochet porte-clés",
+            "desc": "Un crochet mural. Doit tenir les clés et être bien vissé !",
+            "hint": "💡 La solidité est essentielle – les clés sont lourdes !",
+            "reqs": [{"icon":"🔩","text":"Solide, tient sur le mur"},{"icon":"🗝️","text":"Supporte plusieurs clés"}],
+            "feedback": {
+              "mats": { "good": "✅ PETG = solide et résistant. Les clés ne tomberont pas !", "ok": "💛 Le PLA convient pour des clés légères.", "bad": "❌ Un crochet en caoutchouc ? Les clés l'étireaient vers le bas !" },
+              "inf":  { "good": "✅ 100 % de remplissage = le crochet ne sortira pas du mur !", "ok": "💛 Moyen convient pour moins de clés.", "bad": "❌ Un crochet creux avec des clés craquerait !" },
+              "spd":  { "good": "✅ Vitesse OK !" }
+            }
+          },
+          {
+            "icon": "🧴", "name": "Pompe de distributeur de savon",
+            "desc": "Une pompe de remplacement pour savon liquide. Doit être imperméable et solide !",
+            "hint": "💡 Le PETG résiste mieux à l'eau et aux produits chimiques que le PLA.",
+            "reqs": [{"icon":"💧","text":"Résistant à l'eau"},{"icon":"💪","text":"Pompe solide"}],
+            "feedback": {
+              "mats": { "good": "✅ Le PETG résiste à l'eau et au savon. Bon choix pour la salle de bain !", "ok": "💛 Le PLA absorbe l'humidité avec le temps – pas idéal.", "bad": "❌ Une pompe en caoutchouc ne fonctionnerait pas correctement !" },
+              "inf":  { "good": "✅ Remplissage plein = sans pores où l'eau pourrait s'infiltrer.", "ok": "💛 Moyen convient.", "bad": "❌ Pompe creuse – le savon entrerait à l'intérieur !" },
+              "spd":  { "good": "✅ Vitesse OK !" }
+            }
+          },
+          {
+            "icon": "🕯️", "name": "Bougeoir pour bougie chauffe-plat",
+            "desc": "Un joli bougeoir pour la table. Un bel aspect est primordial !",
+            "hint": "💡 PLA + impression lente = le plus beau résultat décoratif.",
+            "reqs": [{"icon":"✨","text":"Bel aspect"},{"icon":"🕯️","text":"Tient la bougie en sécurité"}],
+            "feedback": {
+              "mats": { "good": "✅ PLA = belle surface lisse pour le bougeoir !", "ok": "💛 Le PETG fonctionne, mais la surface ne sera pas aussi lisse.", "bad": "❌ Un bougeoir en caoutchouc se plierait !" },
+              "inf":  { "good": "✅ Creux = léger et économise le matériau.", "ok": "💛 Moyen convient.", "bad": "❌ Un bougeoir plein est inutilement lourd." },
+              "spd":  { "good": "✅ Impression lente = de magnifiques détails sur le bougeoir !", "ok": "💛 Rapidement convient, mais les détails seront plus rugueux." }
+            }
+          }
+        ]
+      },
+      {
+        "id": 2, "icon": "🏫", "name": "École et science", "color": "#6ee7b7",
+        "challenges": [
+          {
+            "icon": "✏️", "name": "Porte-crayons",
+            "desc": "Un organiseur de bureau pour l'école. Doit être stable et joli !",
+            "hint": "💡 Stabilité = remplissage moyen. PLA pour un bel aspect.",
+            "reqs": [{"icon":"📐","text":"Stable sur le bureau"},{"icon":"🎨","text":"Bel aspect"}],
+            "feedback": {
+              "mats": { "good": "✅ PLA = beau et lisse. Parfait pour un bureau d'école !", "ok": "💛 Le PETG fonctionne.", "bad": "❌ Un porte-crayons en caoutchouc se pliera et les crayons tomberont !" },
+              "inf":  { "good": "✅ Remplissage moyen = bonne stabilité, ne se renverse pas.", "ok": "💛 Plein convient, mais c'est inutile.", "bad": "❌ Un porte-crayons creux plein de crayons se renversera !" },
+              "spd":  { "good": "✅ Lentement = plus beau résultat pour la classe !", "ok": "💛 Rapidement convient." }
+            }
+          },
+          {
+            "icon": "🔬", "name": "Portoir à tubes à essai",
+            "desc": "Un support pour le labo scolaire. Doit tenir les tubes fermement !",
+            "hint": "💡 Labo = solidité et résistance. Le PETG résiste aux produits chimiques !",
+            "reqs": [{"icon":"🧪","text":"Tient les tubes fermement"},{"icon":"💧","text":"Résistant aux produits chimiques"}],
+            "feedback": {
+              "mats": { "good": "✅ Le PETG résiste aux acides et aux bases en laboratoire !", "ok": "💛 Le PLA peut être endommagé par les produits chimiques.", "bad": "❌ Un portoir en caoutchouc plie – les tubes se renverseront !" },
+              "inf":  { "good": "✅ Remplissage plein = solidité maximale pour un laboratoire sûr !", "ok": "💛 Moyen convient.", "bad": "❌ Un portoir creux s'effondrera avec les tubes à l'intérieur !" },
+              "spd":  { "good": "✅ Vitesse OK !" }
+            }
+          },
+          {
+            "icon": "🗺️", "name": "Pièce de puzzle-carte",
+            "desc": "Partie d'un puzzle éducatif des continents. Légère et jolie !",
+            "hint": "💡 Puzzle = PLA + remplissage creux + lentement pour les détails.",
+            "reqs": [{"icon":"🌍","text":"Belle forme de continent"},{"icon":"⚖️","text":"Pièce de puzzle légère"}],
+            "feedback": {
+              "mats": { "good": "✅ PLA = surface lisse, belles couleurs, écologique !", "ok": "💛 Le PETG fonctionne.", "bad": "❌ Une pièce de puzzle en caoutchouc se vrille et ne s'emboîtera pas !" },
+              "inf":  { "good": "✅ Creux = pièce légère. Le puzzle est facile à assembler !", "ok": "💛 Moyen convient.", "bad": "❌ Des pièces pleines sont lourdes et fatiguent les enfants !" },
+              "spd":  { "good": "✅ Lentement = formes précises des continents !", "ok": "💛 Rapidement convient, mais les bords seront plus rugueux." }
+            }
+          },
+          {
+            "icon": "📏", "name": "Règle avec millimètres",
+            "desc": "Une règle précise pour le dessin technique. Elle doit avoir des mm précis !",
+            "hint": "💡 Précision = impression lente + matériau dur.",
+            "reqs": [{"icon":"📐","text":"Millimètres précis"},{"icon":"💪","text":"Solide, ne cassera pas"}],
+            "feedback": {
+              "mats": { "good": "✅ PETG = règle solide et précise qui ne gauchira pas !", "ok": "💛 Le PLA fonctionne, mais peut se courber avec le temps.", "bad": "❌ Une règle en caoutchouc ? Chaque mesure serait différente !" },
+              "inf":  { "good": "✅ Règle pleine = rigide, ne fléchit pas lors du dessin !", "ok": "💛 Moyen convient.", "bad": "❌ Une règle creuse fléchira et les mesures ne correspondront pas !" },
+              "spd":  { "good": "✅ Lentement = des graduations en millimètres précises !", "ok": "💛 Rapidement convient, mais les graduations peuvent être moins précises." }
+            }
+          },
+          {
+            "icon": "🚀", "name": "Fusée décorative murale",
+            "desc": "Une décoration pour la classe. Doit être belle et légère !",
+            "hint": "💡 Pour de belles décorations : PLA + impression lente + remplissage faible !",
+            "reqs": [{"icon":"🎨","text":"Belle surface"},{"icon":"⚖️","text":"Légère et économique"}],
+            "feedback": {
+              "mats": { "good": "✅ PLA = surfaces les plus lisses pour une décoration de classe !", "ok": "💛 Le PETG fonctionne.", "bad": "❌ Une fusée en caoutchouc pendrait de travers !" },
+              "inf":  { "good": "✅ Creux = léger et économique. La décoration ne porte rien !", "ok": "💛 Moyen convient.", "bad": "❌ Une décoration pleine = inutilement lourde et coûteuse !" },
+              "spd":  { "good": "✅ Lentement = le plus beau résultat. La classe sera ravie !", "ok": "💛 Rapidement convient, mais la surface sera plus rugueuse." }
+            }
+          }
+        ]
+      }
+    ]
   }
 }
