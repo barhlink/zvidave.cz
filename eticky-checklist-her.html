@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Etický vývoj her pro děti — Checklist</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Nunito:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #1a2744;
+    --navy-mid: #243360;
+    --sky: #5b8fc9;
+    --sky-light: #a8c8e8;
+    --sky-pale: #e8f2fb;
+    --gold: #c9a84c;
+    --gold-light: #f0d89a;
+    --white: #fafcff;
+    --text: #1a2744;
+    --text-soft: #4a5a7a;
+    --text-muted: #8a9ab8;
+    --bg: #f4f8fd;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Nunito', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  /* ─── HEADER ─── */
+  header {
+    background: var(--navy);
+    color: var(--white);
+    padding: 64px 48px 52px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  header::before {
+    content: '';
+    position: absolute;
+    top: -80px; right: -80px;
+    width: 360px; height: 360px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(91,143,201,0.18) 0%, transparent 70%);
+  }
+  header::after {
+    content: '';
+    position: absolute;
+    bottom: -40px; left: 60px;
+    width: 200px; height: 200px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(201,168,76,0.12) 0%, transparent 70%);
+  }
+
+  .header-inner {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+
+  .header-tag {
+    font-family: 'Nunito', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold-light);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .header-tag::before {
+    content: '';
+    display: inline-block;
+    width: 28px; height: 1px;
+    background: var(--gold);
+  }
+
+  h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 1.15;
+    color: var(--white);
+    margin-bottom: 16px;
+    letter-spacing: -0.01em;
+  }
+
+  h1 em {
+    font-style: italic;
+    color: var(--sky-light);
+  }
+
+  .header-sub {
+    font-size: 14px;
+    color: rgba(168,200,232,0.8);
+    font-weight: 300;
+    max-width: 520px;
+    line-height: 1.6;
+  }
+
+  .gold-dot {
+    display: inline-block;
+    width: 7px; height: 7px;
+    border-radius: 50%;
+    background: var(--gold);
+    margin: 0 6px;
+    vertical-align: middle;
+  }
+
+  /* ─── INTRO ─── */
+  .intro-band {
+    background: var(--navy-mid);
+    color: var(--sky-light);
+    padding: 28px 48px;
+  }
+  .intro-band-inner {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 13px;
+    line-height: 1.7;
+    font-style: italic;
+    color: rgba(168,200,232,0.75);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 15.5px;
+  }
+
+  /* ─── MAIN CONTENT ─── */
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 48px 32px 80px;
+  }
+
+  /* ─── SECTION HEADERS ─── */
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 32px;
+    margin-top: 56px;
+    padding-bottom: 16px;
+    border-bottom: 1.5px solid rgba(91,143,201,0.2);
+  }
+  .section-header:first-child { margin-top: 0; }
+
+  .section-icon {
+    font-size: 24px;
+    flex-shrink: 0;
+  }
+
+  .section-title-block {}
+  .section-label {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--sky);
+    margin-bottom: 3px;
+  }
+  .section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.65rem;
+    font-weight: 500;
+    color: var(--navy);
+    line-height: 1.2;
+  }
+  .section-desc {
+    font-size: 13px;
+    color: var(--text-soft);
+    margin-top: 6px;
+    font-style: italic;
+  }
+
+  /* ─── CHECKLIST ITEMS ─── */
+  .checklist {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .item {
+    display: grid;
+    grid-template-columns: 36px 1fr;
+    gap: 0 16px;
+    padding: 20px 20px 20px 0;
+    border-bottom: 1px solid rgba(91,143,201,0.1);
+    transition: background 0.15s;
+    border-radius: 8px;
+    margin: 0 -12px;
+    padding-left: 12px;
+  }
+  .item:last-child { border-bottom: none; }
+  .item:hover { background: rgba(91,143,201,0.04); }
+
+  .checkbox {
+    margin-top: 3px;
+    width: 22px; height: 22px;
+    border: 2px solid var(--sky-light);
+    border-radius: 5px;
+    flex-shrink: 0;
+    cursor: pointer;
+    position: relative;
+    transition: border-color 0.15s, background 0.15s;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .checkbox:hover { border-color: var(--sky); }
+  .checkbox.checked {
+    background: var(--sky);
+    border-color: var(--sky);
+  }
+  .checkbox.checked::after {
+    content: '✓';
+    color: white;
+    font-size: 13px;
+    font-weight: 700;
+  }
+
+  .item-content {}
+
+  .item-title {
+    font-weight: 600;
+    color: var(--navy);
+    font-size: 14.5px;
+    margin-bottom: 3px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .item-question {
+    font-size: 13px;
+    color: var(--text-soft);
+    margin-bottom: 6px;
+    font-style: italic;
+  }
+
+  .item-action {
+    font-size: 12.5px;
+    color: var(--text-soft);
+    background: var(--sky-pale);
+    border-left: 3px solid var(--sky-light);
+    padding: 6px 10px;
+    border-radius: 0 5px 5px 0;
+    margin-top: 6px;
+  }
+
+  .ref-pill {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    padding: 2px 8px;
+    border-radius: 20px;
+    background: rgba(201,168,76,0.12);
+    color: #8a6820;
+    border: 1px solid rgba(201,168,76,0.3);
+    white-space: nowrap;
+  }
+
+  .new-badge {
+    font-size: 10px;
+    font-weight: 700;
+    padding: 2px 7px;
+    border-radius: 20px;
+    background: rgba(91,143,201,0.12);
+    color: var(--sky);
+    border: 1px solid rgba(91,143,201,0.25);
+    letter-spacing: 0.05em;
+  }
+
+  /* ─── REFERENCES ─── */
+  .references-section {
+    margin-top: 64px;
+    padding: 32px;
+    background: var(--navy);
+    border-radius: 12px;
+    color: var(--white);
+  }
+
+  .references-section h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--sky-light);
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(91,143,201,0.3);
+    font-style: italic;
+  }
+
+  .ref-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px 24px;
+  }
+
+  @media (max-width: 600px) { .ref-grid { grid-template-columns: 1fr; } }
+
+  .ref-item {
+    font-size: 12px;
+    color: rgba(168,200,232,0.75);
+    line-height: 1.5;
+    padding: 6px 0;
+    border-bottom: 1px solid rgba(91,143,201,0.1);
+  }
+  .ref-item strong {
+    color: var(--sky-light);
+    font-weight: 600;
+  }
+
+  /* ─── FOOTER ─── */
+  footer {
+    text-align: center;
+    padding: 32px;
+    font-size: 12px;
+    color: var(--text-muted);
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+  }
+  footer a { color: var(--sky); text-decoration: none; }
+
+  /* ─── PROGRESS BAR ─── */
+  .progress-bar-wrap {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--white);
+    border-bottom: 1px solid rgba(91,143,201,0.12);
+    padding: 10px 32px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .progress-label {
+    font-size: 12px;
+    color: var(--text-soft);
+    white-space: nowrap;
+    min-width: 90px;
+  }
+  .progress-track {
+    flex: 1;
+    height: 6px;
+    background: rgba(91,143,201,0.15);
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  .progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--sky), var(--gold));
+    border-radius: 3px;
+    transition: width 0.3s ease;
+    width: 0%;
+  }
+  .progress-count {
+    font-size: 12px;
+    color: var(--sky);
+    font-weight: 600;
+    white-space: nowrap;
+    min-width: 40px;
+    text-align: right;
+  }
+
+  @media print {
+    .progress-bar-wrap { display: none; }
+    body { background: white; }
+    .item:hover { background: none; }
+    header { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .references-section { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  }
+
+  @media (max-width: 640px) {
+    header { padding: 40px 24px 36px; }
+    h1 { font-size: 2.2rem; }
+    main { padding: 32px 20px 60px; }
+    .intro-band { padding: 20px 24px; }
+    .ref-pill { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- STICKY PROGRESS -->
+<div class="progress-bar-wrap">
+  <span class="progress-label">Hotovo</span>
+  <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+  <span class="progress-count" id="progressCount">0 / 15</span>
+</div>
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <div class="header-tag">Zvídavě.cz <span class="gold-dot"></span> Pedagogické nástroje</div>
+    <h1>Etický vývoj her<br><em>pro děti</em></h1>
+    <p class="header-sub">Checklist pro tvorbu digitálních vzdělávacích her, které respektují integritu dítěte, podporují vnitřní motivaci a odpovídají hodnotám svobodného vzdělávání.</p>
+  </div>
+</header>
+
+<!-- INTRO CITATION BAND -->
+<div class="intro-band">
+  <div class="intro-band-inner">
+    „Dítě není nádoba, kterou je třeba naplnit — je to pochodeň, kterou je třeba zapálit."<br>
+    <small style="font-size:13px; color: rgba(168,200,232,0.5);">Adaptace Plutarcha, zastávána Hejným přístupem i konstruktivistickou pedagogikou.</small>
+  </div>
+</div>
+
+<!-- MAIN -->
+<main>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- SEKCE 1: OBECNÁ ETIKA -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <div class="section-header">
+    <span class="section-icon">🛡️</span>
+    <div class="section-title-block">
+      <div class="section-label">Část první</div>
+      <div class="section-title">Obecná etika hry</div>
+      <div class="section-desc">Hlídá, aby hra nebyla manipulační a respektovala psychologickou bezpečnost dítěte.</div>
+    </div>
+  </div>
+
+  <div class="checklist">
+
+    <div class="item">
+      <div class="checkbox" onclick="toggleCheck(this)"></div>
+      <div class="item-content">
+        <div class="item-title">Absence FOMO <span class="ref-pill">Zagal 2013 · DSA</span></div>
+        <div class="item-question">Obsahuje hra prvky, které nutí dítě hrát každý den (denní bonusy, odpočítávání)?</div>
+        <div class="item-action">➝ Pokud ano, odstraň je. Každé sezení musí být hodnotné samo o sobě.</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="checkbox" onclick="toggleCheck(this)"></div>
+      <div class="item-content">
+        <div class="item-title">Vnitřní motivace <span class="ref-pill">Deci & Ryan 2000 · Kohn 1993</span></div>
+        <div class="item-question">Je odměnou digitální cetka (hvězdičky, mince), nebo nové poznání a Aha-moment?</div>
+        <div class="item-action">➝ Preferuj „oživení světa" a odkrytí nového obsahu. Vnější odměny dlouhodobě snižují vnitřní zájem (overjustification effect).</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="checkbox" onclick="toggleCheck(this)"></div>
+      <div class="item-content">
+        <div class="item-title">Bezpečné selhání <span class="ref-pill">Dweck 2006 · Boaler 2016</span></div>
+        <div class="item-question">Existuje ve hře nápis „Chyba", „Špatně" nebo zvuk selhání?</div>
+        <div class="item-action">➝ Nahraď přirozenou zpětnou vazbou: most nesedí, váhy se naklonily, voda přetekla. Negativní hodnotící slova aktivují amygdalu a blokují přemýšlení.</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="checkbox" onclick="toggleCheck(this)"></div>
+      <div class="item-content">
+        <div class="item-title">Ochrana soukromí — anonymita <span class="ref-pill">GDPR · Privacy by Design</span></div>
+        <div class="item-question">Jsou výsledky vázány na jména nebo identifikovatelné profily dítěte?</div>
+        <div class="item-action">➝ Anonymizuj je. Dítě musí být chráněno před veřejným srovnáváním. Výsledky slouží dítěti, ne statistice učitele.</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="checkbox" onclick="toggleCheck(this)"></div>
+      <div class="item-content">
+        <div class="item-title">Absence časového tlaku <span class="ref-pill">Csikszentmihalyi 1990 · Boaler 2016</span></div>
+        <div class="item-question">Jsou ve hře stopky nebo časové limity?</div>
+        <div class="item-action">➝ Odstraň je. Časový tlak při matematice přímo koreluje s math anxiety a přesouvá pozornost od obsahu k výkonu.</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="checkbox" onclick="toggleCheck(this)"></div>
+      <div class="item-content">
+        <div class="item-title">Nenásilná komunikace <span class="ref-pill">Rosenberg 2003</span></div>
+        <div class="item-question">Mluví hra k dítěti v rozkazech („Udělej!", „Vypočítej!") nebo mu nabízí možnosti?</div>
+        <div class="item-action">➝ Používej jazyk zvědavosti: „Zkus zjistit…", „Podívej se, co se stane, když…", „Jak myslíš, že to funguje?"</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="checkbox" onclick="toggleCheck(this)"></div>
+      <div class="item-content">
+        <div class="item-title">Absence addiktivních smyček <span class="ref-pill">Schüll 2012</span> <span class="new-badge">+ nové</span></div>
+        <div class="item-question">Jsou odměny variabilní a nepředvídatelné (slot-machine mechanika)?</div>
+        <div class="item-action">➝ Nahraď předvídatelným a zaslouženým výsledkem. Variabilní odměny aktivují dopaminovou smyčku bez ohledu na věk.</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="checkbox" onclick="toggleCheck(this)"></div>
+      <div class="item-content">
+        <div class="item-title">Důstojný odchod <span class="new-badge">+ nové</span></div>
+        <div class="item-question">Může dítě hru kdykoli opustit bez trestu, ztráty dat nebo pocitu viny?</div>
+        <div class="item-action">➝ Uložení se děje automaticky nebo není potřeba. Žádné cliff-hangery, které emocionálně zadržují dítě u obrazovky.</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="checkbox" onclick="toggleCheck(this)"></div>
+      <div class="item-content">
+        <div class="item-title">Přístupnost (Accessibility) <span class="ref-pill">WCAG 2.1 · UDL</span> <span class="new-badge">+ nové</span></div>
+        <div class="item-question">Je hra použitelná pro děti s dyslexií, barvoslepostí nebo motorickými obtížemi?</div>
+        <div class="item-action">➝ Kontroluj: dostatečná velikost klikatelných ploch (min. 44×44 px), informace není zakódována pouze barvou, font a řádkování jsou čitelné.</div>
+      </div>
+    </div>
+
+  </div><!-- /checklist -->
+
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- SEKCE 2: DESIGN PRO VELU -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <div class="section-header">
+    <span class="section-icon">⛵</span>
+    <div class="section-title-block">
+      <div class="section-label">Část druhá</div>
+      <div class="section-title">Design pro školu Vela</div>
+      <div class="section-desc">Soulad se svobodným vzděláváním, badatelským přístupem a Hejného metodou.</div>
+    </div>
+  </div>
+
+  <div class="checklist">
+
+    <div class="item">
+      <div class="checkbox" onclick="toggleCheck(this)"></div>
+      <div class="item-content">
+        <div class="item-title">Autonomie — možnost volby <span class="ref-pill">Novak UDL · SDT</span></div>
+        <div class="item-question">Má dítě možnost úkol přeskočit, změnit pořadí nebo si vybrat prostředí?</div>
+        <div class="item-action">➝ Nabídni alespoň 2 přístupy ke stejnému obsahu. Sebeřízené učení předpokládá, že dítě zná svůj zájem a tempo.</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="checkbox" onclick="toggleCheck(this)"></div>
+      <div class="item-content">
+        <div class="item-title">Badatelský princip <span class="ref-pill">Hejný & Kuřina 2015</span></div>
+        <div class="item-question">Musí dítě na pravidlo přijít manipulací a pokusem, nebo mu hra pravidlo nejdřív vysvětlí?</div>
+        <div class="item-action">➝ Nejdřív nechat bádat s konkrétními modely. Symbolický zápis až poté, co dítě samo schéma objeví.</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="checkbox" onclick="toggleCheck(this)"></div>
+      <div class="item-content">
+        <div class="item-title">Partnerství — ne-hierarchie <span class="ref-pill">Freire 1968 · Reggio Emilia</span></div>
+        <div class="item-question">Vystupuje hra jako autorita/učitel, nebo jako nástroj/průvodce?</div>
+        <div class="item-action">➝ Zvířata a postavy jsou partneři v krajině — ptají se, zkoumají spolu. Nejsou podřízení ani nadřazení.</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="checkbox" onclick="toggleCheck(this)"></div>
+      <div class="item-content">
+        <div class="item-title">Kooperace místo kompetice <span class="ref-pill">Kohn 1986 · Johnson 1989</span></div>
+        <div class="item-question">Existují ve hře žebříčky nebo srovnání výkonu mezi dětmi?</div>
+        <div class="item-action">➝ Nahraď společným cílem: každý příspěvek buduje kolektivní Atlas nebo ekosystém. Kooperativní struktury prokazatelně zlepšují hloubku porozumění.</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="checkbox" onclick="toggleCheck(this)"></div>
+      <div class="item-content">
+        <div class="item-title">Smysluplný kontext <span class="ref-pill">Lave & Wenger 1991</span></div>
+        <div class="item-question">Jsou matematické jevy propojeny s reálným světem, nebo jsou to izolované příklady v prázdnu?</div>
+        <div class="item-action">➝ Každý úkol má ekologický, přírodní nebo příběhový kontext. Situated learning: poznání bez kontextu neumožňuje transfer.</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="checkbox" onclick="toggleCheck(this)"></div>
+      <div class="item-content">
+        <div class="item-title">Estetický klid <span class="ref-pill">Aron 1996 · Barrett 2015</span></div>
+        <div class="item-question">Je vizuál čistý a klidný, nebo přeplněný blikajícími efekty a agresivní hudbou?</div>
+        <div class="item-action">➝ Pastelové barvy, zvuky přírody, dostatek bílého prostoru. 15–20 % dětí je vysoce senzitivních — vizuální chaos snižuje kognitivní kapacitu.</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="checkbox" onclick="toggleCheck(this)"></div>
+      <div class="item-content">
+        <div class="item-title">Jazyk growth mindset <span class="ref-pill">Dweck · Hattie 2009</span> <span class="new-badge">+ nové</span></div>
+        <div class="item-question">Chválí hra osobu („jsi šikovný!") nebo proces a strategii?</div>
+        <div class="item-action">➝ Chval konkrétní strategii: „Zkusil jsi to jinak — to je zajímavý přístup." Chvála osoby paradoxně snižuje odolnost vůči výzvám.</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="checkbox" onclick="toggleCheck(this)"></div>
+      <div class="item-content">
+        <div class="item-title">Transparentnost mechanik <span class="new-badge">+ nové</span></div>
+        <div class="item-question">Může dítě zjistit, jak hra funguje? Existují skrytá pravidla nebo černé skříňky?</div>
+        <div class="item-action">➝ Hra nemá skrytou logiku. Dítě, které chápe systém, je odolnější vůči manipulaci v budoucnosti — to je samo o sobě vzdělávací cíl.</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="checkbox" onclick="toggleCheck(this)"></div>
+      <div class="item-content">
+        <div class="item-title">Offline nezávislost <span class="new-badge">+ nové</span></div>
+        <div class="item-question">Funguje hra bez připojení k internetu?</div>
+        <div class="item-action">➝ Single-file HTML přístup nebo PWA s cache. Snižuje úzkost z technických výpadků a umožňuje terénní výuku.</div>
+      </div>
+    </div>
+
+  </div><!-- /checklist -->
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- REFERENCE -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <div class="references-section">
+    <h2>Teoretické zdroje</h2>
+    <div class="ref-grid">
+      <div class="ref-item"><strong>Deci & Ryan (1985, 2000)</strong> — Self-Determination Theory. Tři základní psychologické potřeby: autonomie, kompetence, sounáležitost.</div>
+      <div class="ref-item"><strong>Dweck, C. (2006)</strong> — Mindset: The New Psychology of Success. Growth vs. fixed mindset, vliv jazyka chvály na výkon.</div>
+      <div class="ref-item"><strong>Hejný, M. & Kuřina, F. (2015)</strong> — Dítě, škola a matematika. Konstruktivistická matematika: od izolovaných modelů k abstrakci.</div>
+      <div class="ref-item"><strong>Rosenberg, M. (2003)</strong> — Nonviolent Communication. Jazyk potřeb, žádostí a empatie místo hodnocení a příkazů.</div>
+      <div class="ref-item"><strong>Boaler, J. (2016)</strong> — Mathematical Mindsets. Časový tlak a math anxiety, dopad na neurokognitivní zpracování matematiky.</div>
+      <div class="ref-item"><strong>Csikszentmihalyi, M. (1990)</strong> — Flow: The Psychology of Optimal Experience. Podmínky pro stav plné pozornosti a soustředění.</div>
+      <div class="ref-item"><strong>Kohn, A. (1986, 1993)</strong> — No Contest; Punished by Rewards. Kritika kompetice a vnějších odměn ve vzdělávání.</div>
+      <div class="ref-item"><strong>Freire, P. (1968)</strong> — Pedagogy of the Oppressed. Kritika „banking model" vzdělávání, dialog jako základ učení.</div>
+      <div class="ref-item"><strong>Lave, J. & Wenger, E. (1991)</strong> — Situated Learning. Poznání je neoddělitelné od kontextu vzniku — situované učení.</div>
+      <div class="ref-item"><strong>Novak, K. (2014)</strong> — UDL Now! Universal Design for Learning — Multiple Means of Engagement, Representation, Action.</div>
+      <div class="ref-item"><strong>Zagal et al. (2013)</strong> — Dark Patterns in Games. Taxonomie manipulativních herních mechanik.</div>
+      <div class="ref-item"><strong>Schüll, N. D. (2012)</strong> — Addiction by Design. Mechanika variabilních odměn a dopaminová smyčka.</div>
+      <div class="ref-item"><strong>Aron, E. (1996)</strong> — The Highly Sensitive Person. Senzorická citlivost u 15–20 % populace a její dopad na prostředí učení.</div>
+      <div class="ref-item"><strong>Barrett et al. (2015)</strong> — HEAD Project. Fyzické prostředí a kognitivní kapacita; vizuální chaos jako zdroj kognitivní zátěže.</div>
+      <div class="ref-item"><strong>Johnson & Johnson (1989)</strong> — Cooperation and Competition: Theory and Research. Meta-analýza efektů kooperativního učení.</div>
+      <div class="ref-item"><strong>Cavoukian, A. (1995)</strong> — Privacy by Design. Soukromí jako výchozí nastavení systému, ne jako volitelná funkce.</div>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  Zvídavě.cz <span class="gold-dot"></span> Etický design vzdělávacích her <span class="gold-dot"></span> <a href="https://zvidave.cz">zvidave.cz</a>
+</footer>
+
+<script>
+  const TOTAL = 18;
+
+  function toggleCheck(el) {
+    el.classList.toggle('checked');
+    updateProgress();
+  }
+
+  function updateProgress() {
+    const checked = document.querySelectorAll('.checkbox.checked').length;
+    const total = document.querySelectorAll('.checkbox').length;
+    const pct = Math.round((checked / total) * 100);
+    document.getElementById('progressFill').style.width = pct + '%';
+    document.getElementById('progressCount').textContent = checked + ' / ' + total;
+  }
+
+  updateProgress();
+</script>
+
+</body>
+</html>
