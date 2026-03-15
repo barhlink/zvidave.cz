@@ -1,0 +1,122 @@
+/* ─── Zvídavě.cz – shared styles ─── */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=EB+Garamond:ital,wght@0,400;1,400;1,500&display=swap');
+
+:root {
+  --blue:   #5BB8D4;
+  --gold:   #C9A84C;
+  --navy:   #1B2A4A;
+  --cream:  #f5f2ec;
+  --white:  #ffffff;
+  --text:   #2a2a2a;
+  --muted:  #888;
+  --serif:  'EB Garamond', Georgia, serif;
+  --sans:   'Nunito', system-ui, sans-serif;
+  --radius: 10px;
+}
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--sans);
+  background: var(--cream);
+  color: var(--text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ─── Navigation ─── */
+nav {
+  padding: 12px 24px;
+  background: var(--white);
+  border-bottom: 1px solid rgba(0,0,0,0.07);
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+nav a {
+  color: var(--navy);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a:hover { color: var(--blue); }
+
+/* ─── Main content ─── */
+main {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 24px;
+}
+
+h1 {
+  font-family: var(--serif);
+  font-size: 2.2rem;
+  color: var(--navy);
+  margin-bottom: 12px;
+}
+
+h2 {
+  font-size: 1.3rem;
+  color: var(--navy);
+  margin: 28px 0 10px;
+}
+
+p { margin-bottom: 12px; }
+
+section { margin-bottom: 32px; }
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+
+ul li a {
+  color: var(--blue);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+ul li a:hover { text-decoration: underline; }
+
+/* ─── Buttons ─── */
+.btn-primary,
+a.btn-primary {
+  display: inline-block;
+  padding: 12px 28px;
+  background: var(--blue);
+  color: var(--white);
+  border-radius: var(--radius);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+
+.btn-primary:hover { background: var(--navy); }
+
+/* ─── Footer ─── */
+footer {
+  text-align: center;
+  padding: 24px;
+  font-size: 0.85rem;
+  color: var(--muted);
+  border-top: 1px solid rgba(0,0,0,0.07);
+  margin-top: 60px;
+}
+
+footer a { color: var(--muted); }
+
+/* ─── Responsive ─── */
+@media (max-width: 600px) {
+  h1 { font-size: 1.7rem; }
+  main { margin: 24px auto; }
+}

@@ -1,0 +1,293 @@
+{
+  "lang": "en",
+  "site_name": "Zvídavě.cz",
+  "tagline": "Educational games and materials",
+  "nav": {
+    "home": "Home",
+    "catalogue": "Catalogue",
+    "mathematics": "Mathematics",
+    "computer_science": "Computer Science",
+    "czech": "Czech Language"
+  },
+  "catalogue": {
+    "title": "Catalogue",
+    "description": "Overview of all educational materials and games."
+  },
+  "zlomkova_zoo": {
+    "title": "Fraction Zoo",
+    "tagline": "Practising fractions through play",
+    "description": "Students help zoo animals by correctly dividing food using fractions.",
+    "grade_range": "Grades 4–6",
+    "play_button": "Launch game",
+    "teacher_info": "Teacher info",
+    "loading": "Loading game…",
+    "coming_soon": "Coming soon…"
+  },
+  "tiskbot": {
+    "page_title": "Printbot – The 3D Printer Game!",
+    "header": {
+      "subtitle": "Learn how to set up a 3D printer!"
+    },
+    "ui": {
+      "print_btn": "🖨️ PRINT!",
+      "printing_btn": "⏳ Printing...",
+      "retry_btn": "↺ Try again",
+      "next_btn": "Next challenge! →",
+      "hint_show": "💡 I need a hint",
+      "hint_hide": "✕ Hide hint",
+      "challenge_label": "📋 What does the customer want?",
+      "printer_card_label": "🖨️ Printbot's printer",
+      "printer_label": "PRINTBOT 3000",
+      "mascot_label": "Printbot says:",
+      "mat_label": "🧱 What to print with?",
+      "infill_label": "💪 How solid inside?",
+      "speed_label": "⚡ How fast to print?",
+      "progress_label": "Print progress",
+      "chip_mat": "Material",
+      "chip_infill": "Infill",
+      "chip_speed": "Speed",
+      "stat_mat": "Material",
+      "stat_infill": "Infill",
+      "stat_speed": "Speed",
+      "animal_label": "New energy!",
+      "fact_title": "Did you know?",
+      "fact_btn": "Let's go! →",
+      "world_sub": "Energy from this world is in your collection!",
+      "next_world_label": "Next world",
+      "next_world_btn": "Keep playing! →",
+      "win_title": "Energy charged!",
+      "win_msg": "You collected {count} energy units! Now you know how to set up a 3D printer for any job. 🎉",
+      "win_sources": "📚 Facts from: Sinterit.com · All3DP.com · Ultimaker.com · Polymaker Wiki",
+      "restart_btn": "Play again! 🔄",
+      "world_done": "{name} – done!",
+      "mat_options": { "PLA": "Hard plastic", "PETG": "Strong plastic", "TPU": "Rubbery" },
+      "mat_sub":     { "PLA": "PLA", "PETG": "PETG", "TPU": "TPU" },
+      "infill_options": { "low": "Hollow", "mid": "Medium", "high": "Solid" },
+      "infill_sub":     { "low": "0–1 %", "mid": "15–20 %", "high": "100 %" },
+      "speed_options": { "slow": "Slowly", "fast": "Quickly" },
+      "speed_sub":     { "slow": "smoother", "fast": "rougher" },
+      "stat_values": {
+        "mat":    { "PLA": "🔵 Hard plastic", "PETG": "🟢 Strong plastic", "TPU": "🟠 Rubbery" },
+        "infill": { "low": "🫧 Hollow – 0–1 %", "mid": "🍩 Medium – 15–20 %", "high": "🪨 Solid – 100 %" },
+        "speed":  { "slow": "🐢 Slowly", "fast": "🐇 Quickly" }
+      }
+    },
+    "mascot": {
+      "idle":     "Choose your settings and let's print!",
+      "thinking": "Hmm, which material will you pick?",
+      "ready":    "Great! Press PRINT!",
+      "printing": "Printing, printing, printing...",
+      "great":    "The customer is thrilled! Excellent work!",
+      "ok":       "The customer is happy. What could you try next time?",
+      "curious":  "Interesting result! What would you change next time?"
+    },
+    "results": {
+      "great":   "The customer is thrilled! 🎉",
+      "ok":      "The customer is fairly satisfied.",
+      "curious": "Interesting result – what would you try differently?",
+      "bad":     "Hmm, the result doesn't match what the customer wanted. What could you change?"
+    },
+    "mat_facts": {
+      "PLA":  { "title": "PLA – Hard plastic",    "text": "🌽 PLA is made from cornstarch and sugarcane – one of the most eco-friendly plastics!" },
+      "PETG": { "title": "PETG – Strong plastic",  "text": "💪 PETG withstands temperatures up to 80 °C and is stronger than PLA. Great for load-bearing parts." },
+      "TPU":  { "title": "TPU – Rubbery material", "text": "🤸 TPU can stretch up to 5× its length! Like plastic rubber – flexible and tough." }
+    },
+    "facts": [
+      { "emoji": "🧅", "text": "The printer builds layer by layer – like an onion!", "detail": "Each layer is 0.1–0.3 mm. Thinner layer = smoother surface, but longer print. Half the thickness = double the time!" },
+      { "emoji": "🌽", "text": "PLA is made from corn!", "detail": "PLA comes from renewable sources – cornstarch or sugarcane. Gentle on the environment." },
+      { "emoji": "🪨", "text": "Infill determines both strength and weight!", "detail": "0–1 % = light and hollow. 100 % = full and strong. Keys and tools need lots of infill!" },
+      { "emoji": "🐇", "text": "Fast printing = rougher surface!", "detail": "Slowly = nicer result. Quickly = saves time. For decorations we print slowly, for prototypes quickly." },
+      { "emoji": "🦆", "text": "TPU stretches like rubber!", "detail": "TPU (thermoplastic polyurethane) can stretch up to 5× its length. That's why it's used for toys, phone cases, and guards." },
+      { "emoji": "🌡️", "text": "PETG withstands up to 80 °C!", "detail": "PLA softens around 60 °C – not suitable for items in a car or near a stove. PETG can even handle a hot oven!" },
+      { "emoji": "♻️", "text": "3D printing saves material!", "detail": "Unlike machining where material is removed, a 3D printer only adds what is needed." },
+      { "emoji": "🎨", "text": "PLA gives the smoothest surfaces!", "detail": "For decorative objects, PLA is best – it sands and paints easily. PETG and ABS are rougher." }
+    ],
+    "animal_names": [
+      ["Flash", "Flame", "Drop", "Swirl", "Spark"],
+      ["Flame", "Drop", "Swirl", "Spark", "Flash"],
+      ["Drop", "Swirl", "Spark", "Flash", "Flame"]
+    ],
+    "worlds": [
+      {
+        "id": 0, "icon": "🎮", "name": "Toys & Games", "color": "#4ade80",
+        "challenges": [
+          {
+            "icon": "🦆", "name": "Rubber duck",
+            "desc": "A toy for a small child. It must be soft and flexible!",
+            "hint": "💡 TPU stretches up to 5× its length. It's like real rubber!",
+            "reqs": [{"icon":"🤲","text":"Soft and flexible"},{"icon":"👶","text":"Safe for a child"}],
+            "feedback": {
+              "mats": { "good": "✅ TPU – stretches up to 5× and bounces back. Perfect for a toy!", "bad": "❌ Hard plastic would be like a rock. The child would be disappointed!" },
+              "inf":  { "good": "✅ Medium infill = the right weight for the duck.", "ok": "💛 This infill works, but medium would be better." },
+              "spd":  { "good": "✅ Speed is fine!" }
+            }
+          },
+          {
+            "icon": "🏆", "name": "Winner's trophy",
+            "desc": "A nice trophy for the shelf. A beautiful surface is important!",
+            "hint": "💡 PLA gives the smoothest surfaces. Hollow infill saves material.",
+            "reqs": [{"icon":"✨","text":"Smooth surface"},{"icon":"🎨","text":"Looks great"}],
+            "feedback": {
+              "mats": { "good": "✅ PLA = beautiful smooth surface. Made from corn! 🌽", "ok": "💛 PETG works, but PLA would be smoother.", "bad": "❌ A rubbery trophy would be bent and weird!" },
+              "inf":  { "good": "✅ Hollow = light, saves material. The trophy holds nothing!", "ok": "💛 This infill works, hollow would be better." },
+              "spd":  { "good": "✅ Slowly = nicer result!", "ok": "💛 Quickly works, but slowly = smoother surface." }
+            }
+          },
+          {
+            "icon": "🎯", "name": "Dartboard",
+            "desc": "A solid dartboard for the wall. It must withstand darts and impacts!",
+            "hint": "💡 Strength = high infill + strong material.",
+            "reqs": [{"icon":"💪","text":"Solid, withstands impacts"},{"icon":"📌","text":"Holds shape on the wall"}],
+            "feedback": {
+              "mats": { "good": "✅ PETG is stronger than PLA. The board will take many hits!", "ok": "💛 PLA works for lighter use.", "bad": "❌ A rubber dartboard would wave with every dart!" },
+              "inf":  { "good": "✅ 100 % infill = maximum strength. The board needs it!", "ok": "💛 Medium infill works, but solid would be safer.", "bad": "❌ A hollow dartboard will break on the first hit!" },
+              "spd":  { "good": "✅ Speed OK!" }
+            }
+          },
+          {
+            "icon": "🎪", "name": "Finger puppet",
+            "desc": "A puppet for the theatre. Must be comfortable on a finger and slightly flexible!",
+            "hint": "💡 For fingers we want flexible material, not hard plastic.",
+            "reqs": [{"icon":"👆","text":"Comfortable on a finger"},{"icon":"🤸","text":"Slightly flexible"}],
+            "feedback": {
+              "mats": { "good": "✅ TPU is flexible – comfortable on the finger and won't snap!", "ok": "💛 PLA works, but can feel hard on a finger.", "bad": "❌ PETG is too rigid – the puppet would be hard to put on." },
+              "inf":  { "good": "✅ Hollow = light, loose puppet. The finger moves freely.", "ok": "💛 Medium works.", "bad": "❌ A solid puppet would be heavy and stiff." },
+              "spd":  { "good": "✅ Slow print = nicer puppet details.", "ok": "💛 Quickly works." }
+            }
+          },
+          {
+            "icon": "🎲", "name": "Game die",
+            "desc": "A die for a board game. It must be precise and solid!",
+            "hint": "💡 Precision = nice print. Strength = high infill.",
+            "reqs": [{"icon":"🎯","text":"Precise numbers"},{"icon":"💪","text":"Solid, won't fall apart"}],
+            "feedback": {
+              "mats": { "good": "✅ PETG – solid and the numbers will be precise!", "ok": "💛 PLA works, but PETG would be stronger.", "bad": "❌ A rubber die? It would deform every time you throw it!" },
+              "inf":  { "good": "✅ Solid die = won't get crushed even under pressure!", "ok": "💛 Medium works.", "bad": "❌ A hollow die would crack on the first throw!" },
+              "spd":  { "good": "✅ Slowly = nicer numbers on the die.", "ok": "💛 Quickly works, but numbers may be rougher." }
+            }
+          }
+        ]
+      },
+      {
+        "id": 1, "icon": "🏠", "name": "Home & Living", "color": "#34d399",
+        "challenges": [
+          {
+            "icon": "🪴", "name": "Windowsill plant pot",
+            "desc": "A pretty pot for the window. Light and decorative!",
+            "hint": "💡 Decoration = PLA + slow print + hollow infill.",
+            "reqs": [{"icon":"🌿","text":"Nice appearance"},{"icon":"⚖️","text":"Light, won't damage the sill"}],
+            "feedback": {
+              "mats": { "good": "✅ PLA = beautiful smooth surface for a decorative pot!", "ok": "💛 PETG works, but PLA would look nicer.", "bad": "❌ A rubber pot would sag under the weight of soil!" },
+              "inf":  { "good": "✅ Hollow = light. The windowsill can handle it!", "ok": "💛 Medium works.", "bad": "❌ A solid pot would be heavy as a stone!" },
+              "spd":  { "good": "✅ Slowly = beautiful details!", "ok": "💛 Quickly works, but the surface will be rougher." }
+            }
+          },
+          {
+            "icon": "📱", "name": "Phone stand",
+            "desc": "A desk stand. It must hold the phone firmly and be stable!",
+            "hint": "💡 Stability = enough infill. PETG handles pressure better.",
+            "reqs": [{"icon":"📐","text":"Stable, won't tip over"},{"icon":"💪","text":"Holds phone firmly"}],
+            "feedback": {
+              "mats": { "good": "✅ PETG is stronger – the stand will hold even a heavy tablet!", "ok": "💛 PLA works for lighter phones.", "bad": "❌ A rubber stand = the phone keeps tipping over!" },
+              "inf":  { "good": "✅ Medium infill = good stability without wasting material.", "ok": "💛 Solid infill is unnecessary, but it works.", "bad": "❌ A hollow stand will collapse under the phone!" },
+              "spd":  { "good": "✅ Speed OK!" }
+            }
+          },
+          {
+            "icon": "🔑", "name": "Key hook",
+            "desc": "A wall hook. It must hold keys and be screwed in firmly!",
+            "hint": "💡 Strength is key – keys are heavy!",
+            "reqs": [{"icon":"🔩","text":"Solid, holds on the wall"},{"icon":"🗝️","text":"Holds multiple keys"}],
+            "feedback": {
+              "mats": { "good": "✅ PETG = solid and tough. Keys won't fall!", "ok": "💛 PLA works for light keys.", "bad": "❌ A rubber hook? The keys would stretch it down!" },
+              "inf":  { "good": "✅ 100 % infill = the hook won't pull from the wall!", "ok": "💛 Medium works for fewer keys.", "bad": "❌ A hollow hook with keys will snap!" },
+              "spd":  { "good": "✅ Speed OK!" }
+            }
+          },
+          {
+            "icon": "🧴", "name": "Soap dispenser pump",
+            "desc": "A replacement pump for liquid soap. Must be waterproof and solid!",
+            "hint": "💡 PETG resists water and chemicals better than PLA.",
+            "reqs": [{"icon":"💧","text":"Water resistant"},{"icon":"💪","text":"Solid pump"}],
+            "feedback": {
+              "mats": { "good": "✅ PETG resists water and soap. Right choice for the bathroom!", "ok": "💛 PLA absorbs moisture over time – not ideal.", "bad": "❌ A rubber pump wouldn't function properly!" },
+              "inf":  { "good": "✅ Solid infill = no pores for water to seep into.", "ok": "💛 Medium works.", "bad": "❌ Hollow pump – soap would get inside!" },
+              "spd":  { "good": "✅ Speed OK!" }
+            }
+          },
+          {
+            "icon": "🕯️", "name": "Tea light candle holder",
+            "desc": "A pretty holder for the table. A beautiful look is the main goal!",
+            "hint": "💡 PLA + slow print = the most beautiful decorative result.",
+            "reqs": [{"icon":"✨","text":"Beautiful appearance"},{"icon":"🕯️","text":"Holds the candle safely"}],
+            "feedback": {
+              "mats": { "good": "✅ PLA = smooth beautiful surface for the candle holder!", "ok": "💛 PETG works, but the surface won't be as smooth.", "bad": "❌ A rubber holder would bend!" },
+              "inf":  { "good": "✅ Hollow = light and saves material.", "ok": "💛 Medium works.", "bad": "❌ A solid holder is unnecessarily heavy." },
+              "spd":  { "good": "✅ Slow print = wonderful candle holder details!", "ok": "💛 Quickly works, but details will be rougher." }
+            }
+          }
+        ]
+      },
+      {
+        "id": 2, "icon": "🏫", "name": "School & Science", "color": "#6ee7b7",
+        "challenges": [
+          {
+            "icon": "✏️", "name": "Pencil holder",
+            "desc": "A desk organiser for school supplies. Must be stable and nice looking!",
+            "hint": "💡 Stability = medium infill. PLA for a nice appearance.",
+            "reqs": [{"icon":"📐","text":"Stable on the desk"},{"icon":"🎨","text":"Nice appearance"}],
+            "feedback": {
+              "mats": { "good": "✅ PLA = beautiful and smooth. Perfect for a school desk!", "ok": "💛 PETG works.", "bad": "❌ A rubber holder will bend and pencils will fall!" },
+              "inf":  { "good": "✅ Medium infill = good stability, won't tip over.", "ok": "💛 Solid works, but it's unnecessary.", "bad": "❌ A hollow holder full of pencils will topple!" },
+              "spd":  { "good": "✅ Slowly = nicer result for the classroom!", "ok": "💛 Quickly works." }
+            }
+          },
+          {
+            "icon": "🔬", "name": "Test tube rack",
+            "desc": "A rack for the school lab. Must hold test tubes firmly!",
+            "hint": "💡 Lab = strength and resistance. PETG resists chemicals!",
+            "reqs": [{"icon":"🧪","text":"Holds test tubes firmly"},{"icon":"💧","text":"Chemical resistant"}],
+            "feedback": {
+              "mats": { "good": "✅ PETG resists acids and bases in the lab!", "ok": "💛 PLA can be damaged by contact with chemicals.", "bad": "❌ A rubber rack bends – test tubes will tip over!" },
+              "inf":  { "good": "✅ Solid infill = maximum strength for a safe lab!", "ok": "💛 Medium works.", "bad": "❌ A hollow rack will collapse with test tubes in it!" },
+              "spd":  { "good": "✅ Speed OK!" }
+            }
+          },
+          {
+            "icon": "🗺️", "name": "Map puzzle piece",
+            "desc": "Part of an educational continents puzzle. Light and good-looking!",
+            "hint": "💡 Puzzle = PLA + hollow infill + slow for details.",
+            "reqs": [{"icon":"🌍","text":"Nice continent shape"},{"icon":"⚖️","text":"Light puzzle piece"}],
+            "feedback": {
+              "mats": { "good": "✅ PLA = smooth surface, nice colours, eco-friendly!", "ok": "💛 PETG works.", "bad": "❌ A rubber puzzle piece will warp and won't fit!" },
+              "inf":  { "good": "✅ Hollow = light piece. The puzzle is easy to assemble!", "ok": "💛 Medium works.", "bad": "❌ Solid puzzle pieces are heavy and tire children out!" },
+              "spd":  { "good": "✅ Slowly = precise continent shapes!", "ok": "💛 Quickly works, but edges will be rougher." }
+            }
+          },
+          {
+            "icon": "📏", "name": "Millimetre ruler",
+            "desc": "A precise ruler for technical drawing. It must have accurate mm!",
+            "hint": "💡 Precision = slow print + hard material.",
+            "reqs": [{"icon":"📐","text":"Accurate millimetres"},{"icon":"💪","text":"Solid, won't snap"}],
+            "feedback": {
+              "mats": { "good": "✅ PETG = solid and precise ruler that won't warp!", "ok": "💛 PLA works, but may bend over time.", "bad": "❌ A rubber ruler? Every measurement will be different!" },
+              "inf":  { "good": "✅ Solid ruler = rigid, won't flex during drawing!", "ok": "💛 Medium works.", "bad": "❌ A hollow ruler will flex and measurements won't match!" },
+              "spd":  { "good": "✅ Slowly = precise millimetre markings!", "ok": "💛 Quickly works, but markings may be less precise." }
+            }
+          },
+          {
+            "icon": "🚀", "name": "Rocket wall decoration",
+            "desc": "A classroom decoration. Must be beautiful and light!",
+            "hint": "💡 For beautiful decorations: PLA + slow print + low infill!",
+            "reqs": [{"icon":"🎨","text":"Beautiful surface"},{"icon":"⚖️","text":"Light and economical"}],
+            "feedback": {
+              "mats": { "good": "✅ PLA = smoothest surfaces for a classroom decoration!", "ok": "💛 PETG works.", "bad": "❌ A rubber rocket would hang crooked!" },
+              "inf":  { "good": "✅ Hollow = light and economical. The decoration carries nothing!", "ok": "💛 Medium works.", "bad": "❌ A solid decoration = unnecessarily heavy and expensive!" },
+              "spd":  { "good": "✅ Slowly = most beautiful result. The class will love it!", "ok": "💛 Quickly works, but the surface will be rougher." }
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
